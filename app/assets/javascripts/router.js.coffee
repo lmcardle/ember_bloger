@@ -10,6 +10,10 @@ EmberBloger.PostsRoute = Ember.Route.extend
   model: ->
     posts
 
+EmberBloger.PostRoute = Ember.Route.extend
+  model: (params) ->
+    posts.findBy 'id', params.post_id
+
 posts = [
   {
     id: '1',
