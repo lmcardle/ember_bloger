@@ -2,8 +2,8 @@
 
 EmberBloger.Router.map ()->
   @resource 'about'
-  @resource 'posts'
-  @resource 'post', path: ':post_id'
+  @resource 'posts', ->
+    @resource 'post', path: ':post_id'
 
 
 EmberBloger.PostsRoute = Ember.Route.extend
