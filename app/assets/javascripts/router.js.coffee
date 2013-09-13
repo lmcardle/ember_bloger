@@ -14,6 +14,9 @@ EmberBloger.PostRoute = Ember.Route.extend
   model: (params) ->
     posts.findBy 'id', params.post_id
 
+Ember.Handlebars.helper 'format-date', (date) ->
+  moment(date).fromNow()
+
 posts = [
   {
     id: '1',
