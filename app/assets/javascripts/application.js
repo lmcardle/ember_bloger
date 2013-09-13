@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require moment
+//= require showdown
 //= require handlebars
 //= require ember
 //= require ember-data
